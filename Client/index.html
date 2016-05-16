@@ -1,0 +1,51 @@
+<!DOCTYPE html
+PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html>
+
+<head>
+<title>Web service by Rabat Cédric & Rabat Ludovic</title>
+</head>
+
+<body>
+	<h1>Ask a credit</h1>
+	<form action="http://safe-scrubland-69417.herokuapp.com/myresource/askCredit" method="POST">
+		<label for="name">Lastname : </label><input name="name"/><br/><br/>
+		<label for="firstName">Sum : </label><input name="sum"/><br/><br/>
+		<button type="submit">Submit</button>
+	</form>
+
+	<h1>Accounts</h1>
+	<h2>List all accounts</h2>
+	<form action="http://1-dot-robust-resource-130621.appspot.com/accManager/account/getAccount" method="get">
+		<button type="submit">Show all accounts</button>
+	</form>
+
+	<h2>Add an account</h2>
+	<form action="http://1-dot-robust-resource-130621.appspot.com/accManager/account/add" method="post">
+		<fieldset>
+			<label for="name">Lastname : </label><input name="lastName"/><br/><br/>
+			<label for="firstName">Firstname : </label><input name="firstName"/><br/><br/>
+			<label for="account">Account : </label><input name="account"/><br/><br/>
+			<label for="risk">risk (high/low) : </label><input name="risk"/><br/><br/>
+		</fieldset>
+		<button type="submit">Submit</button>
+	</form>	
+
+	<h1>Approvals</h1>
+	<h2>List all approvals</h2>
+	<form action="http://1-dot-robust-resource-130621.appspot.com/appManager/approval/getApprovals" method="get">
+		<button type="submit">Show all approvals</button>
+	</form>
+
+	<h2>Add an approval</h2>
+	<form action="http://1-dot-robust-resource-130621.appspot.com/appManager/approval/add" method="post">
+		<fieldset>
+			<label for="name">Name : </label><input name="name"/><br/><br/>
+			<label for="response">Response (accepted/refused) : </label><input name="response"/><br/><br/>
+		</fieldset>
+		<button type="submit">Submit</button>
+	</form>	
+</body>
+
+</html>
